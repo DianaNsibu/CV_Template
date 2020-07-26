@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>connexion</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+       <!------ le logo ------>
+       <img src="./pictures/logo.png" class="mx-auto d-block" alt="">
+       <!-----Barre navigation------>
+       <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Accueil</a></li>
+             <li class="nav-item"><a class="nav-link " href="./about.html">About</a></li>
+             <li class="nav-item"><a class="nav-link " href="./cours.html">Les cours</a></li>
+          <!--   <li class="nav-item"><a class="nav-link " href="./organisateurs.html">Les organisateurs</a></li>-->
+             <li class="nav-item"><a class="nav-link " href="./contact.html">Contact</a></li>
+             <li class="nav-item"><a class="nav-link " href="./connexion.html">Connexion</a></li>
+            </ul>
+        </nav>         
+   </header>
+   <main>
+   <section class="container">
+        <h2>Mon compte</h2>
+        <h3>Vos données personnelles</h3>
+          <div class="section">
+             <div class="image">
+               <img src="./pictures/didi.jpg" alt="" class="img-fluid">
+             </div>
+             <div id="donnees">
+               <table class="table table-striped">
+                  <tr>
+                      <td>Nom et prénom </td>
+                      <td>Bougie Laulau</td>
+                  </tr>
+                  <tr>
+                      <td>En quelques mots: </td>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloremque nostrum harum ratione aperiam voluptatem.</td>
+                  </tr>
+                  <tr>
+                      <td>Date de naissance :</td>
+                      <td>19 avril 1979</td>
+                  </tr>
+                  <tr>
+                      <td>Pseudo</td>
+                      <td>Didi</td>
+                  </tr>
+              </table> 
+             </div>
+             
+        </div>
+        <br><br>
+         <a href="" class="btn btn-outline-dark"> Modifier mes données </a>     
+       <h3>Mes cours</h3>
+       <div class="section">
+           <div id="cours">
+               <table class="table">
+                 <thead>
+                      <tr>
+                          <td>Titre</td>
+                          <td>Description</td>
+                          <td>Date</td>
+                          <td>Détail</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td><a>Titre du cours</a></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, corporis!</td>
+                        <td>26 mai 2020</td>
+                        <td><a href="">Détail</a></td>
+                    </tr> 
+              </tbody>
+            </table>
+          
+             <a href="{{path('enregistrement_cours')}}" class="btn btn-outline-dark"> Ajouter un nouveau cours </a>
+             <br><br>
+           </div>
+       </div>       
+       
+           
+           
+      
+        
+   </section>
+    </main>
+    <br>
+    <footer>
+         @ Cook and Share - Designed by <a href="#">DIDI LUSA</a>
+         <p><a href="">Politique de confidentialité</a></p>
+         <div id="icon">
+            <span class="fab fa-facebook"></span> 
+            <span class="fab fa-instagram"></span>
+         </div>
+    </footer>
+</body>
+</html>

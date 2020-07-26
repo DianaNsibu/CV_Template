@@ -1,0 +1,363 @@
+                                                                 
+
+/*-------------------------------------------La version mobile--------------------------------*/
+
+html{
+    /*font-family: 'Anonymous Pro', monospace;*/
+    font-family: 'Text Me One', sans-serif;
+   
+    font-size: 20px;
+    color:#0f1f38;   
+    margin: 0;
+    padding 0;
+}
+
+
+/*--------------------Le document------------*/
+
+body{
+  margin: 0;
+  padding 0;
+  width: 100%;
+  position: relative;
+ 
+}
+
+section{
+ background-image: url(../pictures/backgrounds/fond1.jpg);
+ background-size: contain;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ 
+ 
+}
+ 
+.section{
+    border: 1px solid #061283;
+    border-radius: 3px;
+    margin: 5%;
+    padding: 5%;
+    background-color: white;
+    /*opacity: 0.9;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;  
+}
+
+
+/*--------------Header and footer--------------*/
+
+header,footer{
+    width: 100%;  
+    height: 10vh;
+    margin: 0;
+    background-color: #061283;
+    color: white;
+}
+
+
+header{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*-------------------------Les liens--------------------*/
+header h3 a {
+    color: white;
+    font-family: 'Abril Fatface', cursive;  
+}
+
+a{
+    text-decoration: none;
+    color: #0f1f38;
+    font-style:italic;
+}
+
+/*L'ancre*/
+
+.arrow{
+    /*border: 1px solid red;*/
+    background-color: white;
+    position: fixed;
+    top: 70%;
+    left: 88%;  
+    display: none;
+}
+
+/*----------------------La barre de navigation--------------*/
+
+.barreNav{
+    position: absolute;
+    width: 100%;
+    height: 700px; 
+    display: none;
+}
+
+nav{
+    background-color:white ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+nav > ul > li > a{
+    text-align: center;
+    color:  #0f1f38;
+    border-bottom: 3px solid #337bae;
+}
+
+ .visible {
+     display: block;
+}
+
+
+/*-------------Memnu hamburger----------------*/
+button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > .fas {
+    color: white;
+}
+
+
+
+/*---------Les titres-----------------*/
+
+header h3 a {
+    font-family: 'Abril Fatface', cursive;
+    border-bottom: 3px solid white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h5 {
+    /*border-bottom: 2px solid #061283;*/
+    font-size: 23px;
+    text-align:left;
+    font-weight: 1000;
+}
+
+h4{
+    font-size: 28px;
+}
+
+h6{
+  font-size: 18px;  
+}
+
+p{
+    font-size : 18px;   
+}
+
+li{
+    font-size: 18px;
+}
+
+
+
+/*-------------Style titre en-tête des pages-------------*/
+
+.titrePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titre3{
+    text-align: center;
+    
+}
+
+.titre3 h3{
+    background-color: white;
+    font-size: 40px;
+   
+}
+    
+.titre4 {
+    text-align: center;
+    border-bottom: 1px solid #0f1f38;
+}
+
+.titre5{
+    font-weight: bolder;
+}
+  
+.titre6{
+   color: #337bae;
+   font-weight: bolder;
+}
+.page1{
+    color:#ffbebd;
+}
+
+.page2{
+    color:#061283;
+}
+
+.page3{
+    color: #337bae;
+}
+
+.page4{
+    color:#0f1f38;
+}
+
+.page5{
+    color:#ffb74c;
+}
+
+
+
+/*-------------------------------------------La version tablette----------------------------- */
+
+ @media(min-width: 500px) and (max-width: 950px){
+     
+     html{
+         font-size:20px;
+     }
+     
+     
+     
+/*-------------L'ancre----------*/
+     .arrow{
+    left: 92%;   
+    }
+    .titre3 h3{
+    width: 500px;
+       
+}
+     
+/*--------La barre de navigation-------*/
+     
+     button{
+         display: none;
+     }
+     .barreNav {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        display:block;    
+    }
+    nav{
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+    nav > ul{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*justify-content: space-around;*/
+    }
+     
+    nav ul li a {   
+       border-bottom: 3px solid #337bae;
+       font-weight: 700;
+    } 
+       
+}
+
+
+
+
+
+/*----------------------------------------La version desktop----------------------------------*/
+
+@media(min-width: 951px){
+    
+    html{
+        font-size:20px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    
+    
+/*------L'ancre---------*/
+    
+ .arrow{
+    left: 96%;   
+}
+   
+    
+/*------Barre de navigation------*/
+    
+    button{
+        display: none;
+    }
+    
+    .barreNav {
+        width: 100%;
+        height: 10%;
+        position: relative;
+        display: block;
+        
+    }
+    
+    nav ul{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    
+    nav ul li a {
+       border-bottom: 5px solid #337bae;
+       font-weight: 700;
+    }
+    
+   
+    
+    
+/*-----tailles en-tête titres-------*/  
+
+.titre3 h3{
+    width: 500px;
+    font-size: 48px;    
+}
+    
+    
+    
+}

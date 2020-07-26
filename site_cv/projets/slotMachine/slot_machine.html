@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+            .odometer {
+                font-size: 100px !important;
+            }
+        </style>        
+         
+        <style>
+            * {
+                font-family: Arial, sans-serif;
+            }
+            
+            table {
+                border-collapse: collapse;
+                width: 400px;
+            }
+            
+            th {
+                text-align: left;
+                background-color: #000000;
+                color: #fff;
+                padding: 10px;
+            }
+            
+            td {
+                padding: 10px;
+            }
+            
+            tr:nth-of-type(even) {
+                background-color: #ccc;
+            }
+            
+            .win {
+                background-color: #1cdb65;
+            }
+            
+            .loss {
+                background-color: #c70d0d;
+            }
+        </style>                            
+    </head>
+    
+    <body>
+        <h1>Slot Machine</h1>
+        
+        <p>
+            <span class="odometer"></span>
+        </p>
+        
+        <p>
+            <button id="luck">Lucky!</button>
+            <button id="reset">Reset</button>
+        </p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Coup N°</th>
+                    <th>Résultat</th>
+                    <th>Argent</th>
+                    <th>Gain &amp; Perte</th>
+                </tr>
+            </thead>
+            
+            <tbody></tbody>
+            
+            <tfoot></tfoot>
+        </table>
+        <script>
+        //Récupérer le span pour y injecter les chiffres pris au hasard : 
+            
+        var span = document.querySelector('span');
+        
+        //Récupérer les boutons : 
+        var lucky = document.getElementById('luck');
+        var reser = document.getElementById('reset');
+        var send = document.getElementById('send');
+        //Le tbody:
+        var tab = document.querySelector('tbody');            
+            
+       //les variables globales : 
+            
+        var gain;
+        var compteur = 1;
+        var montant = 5; 
+        var total;
+                     
+       //Les chiffres au hasard : 
+    function getRandomIntegerBetween(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+        
+   
+//Mise en place du jeux : 
+
+  lucky.addEventListener('click', function(){
+
+        if(montant > 0){
+
+    //Les nombres au hasard :
+            var chiffre1= getRandomIntegerBetween(1,8);
+            var chiffre2= getRandomIntegerBetween(1,8);
+            var chiffre3= getRandomIntegerBetween(1,8);
+            var total = String(chiffre1) + String(chiffre2) + String(chiffre3);
+            span.innerHTML = total; 
+
+    //les variables du tableaux : 
+               var coups = compteur ++;
+               var reslut = total;
+               var benef = Gain() ;
+               montant = montant + gain;
+            /*console.log(montant);*/
+
+    //Création des cellules du tableau : 
+
+        var td1 = document.createElement('td');
+            td1.innerHTML = coups;
+        var td2 = document.createElement('td');
+            td2.innerHTML = reslut;
+        var td3 = document.createElement('td');
+            td3.innerHTML = montant;
+        var td4 = document.createElement('td');
+            td4.innerHTML = benef;
+
+   
+    //mettre les nouveaux td dans une liste : 
+        var liste = [td1,td2,td3,td4];
+        //console.log(liste);
+
+    //Création d'un element tr :
+        var tr = document.createElement('tr');
+
+    //Remplir la ligne : 
+
+        for(let i = 0; i < liste.length; i++){
+            tr.appendChild(liste[i]);
+        }
+     //Rajouter la ligne au tableau : 
+
+        tab.appendChild(tr);
+ 
+    //changement de couleur:
+            
+        if(benef > 0){
+            td4.classList.add('win');
+        }else{
+            td4.classList.add('loss');
+        }
+    }    
+
+})      
+        
+//La fonction pour le calcul des gains : 
+     function Gain (){ 
+            
+            if(total == '777'){
+                gain = 10 ;    
+            }
+            else if(total == '123'){
+                gain = 5 ;   
+                }
+            else if(total == '111'){
+                gain = 2 ;   
+                } 
+            else{
+                gain = - 1 ;        
+                }         
+        return gain;
+        
+           
+    }       
+         
+//Recommencer le jeu : 
+            
+reser.addEventListener('click', function(){
+    montant = 5 ;
+    compteur = 1 ;
+    tab.innerHTML = " ";
+})
+        </script>
+    
+</body>
+</html>

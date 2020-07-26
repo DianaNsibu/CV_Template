@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+</head>
+<body>
+   <div class="container-fluid">
+   <!-------------------------Header-------------------------------->
+       <header>
+       <!------ le logo ------>
+       <img src="./pictures/logo.png" class="mx-auto d-block" alt="">
+       <!-----Barre navigation------>
+       <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Accueil</a></li>
+             <li class="nav-item"><a class="nav-link " href="./about.html">About</a></li>
+             <li class="nav-item"><a class="nav-link " href="./cours.html">Les cours</a></li>
+             <!--<li class="nav-item"><a class="nav-link " href="./organisateurs.html">Les organisateurs</a></li>-->
+             <li class="nav-item"><a class="nav-link " href="./contact.html">Contact</a></li>
+             <li class="nav-item"><a class="nav-link " href="./connexion.html">Connexion</a></li>
+            </ul>
+        </nav>         
+       </header>
+    </div>
+   <main>
+   <section class="container">
+    <!-- Le carousel -->
+     <div class="row ">
+         <div class="carousel slide"  data-ride="carousel" id="demo">
+             <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+             </ul>
+              <!-- The slideshow -->
+             <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="./pictures/cuisine/2.png" alt="" >
+                      <div class="carousel-caption">
+                         <p>Des ateliers ludiques</p> 
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./pictures/cuisine/1.png" alt=""  >
+                      <div class="carousel-caption">
+                          <p>Faits par vous et pour vous</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./pictures/cuisine/3.png" alt="" >
+                      <div class="carousel-caption">
+                          <p>Dans une bonne ambiance</p>
+                      </div>
+                  </div>
+              </div> 
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>  
+          </div> 
+     </div>
+    <h3>Des cours par vous et pour vous</h3>
+     <div class="row">
+         <p>Chacun des ateliers organisés est conçu pour vous aider à apprendre à cuisiner mais également à échanger avec votre hôte. C'est l'occasion de poser vos questions,de tester et également de tisser des liens autour de l'art culinaire.</p>
+         <p>Pour donner des cours pas besoin d'être un expert ! Les bonnes recettes de votre grand-mère suffisent aplement à ouvrir votre cuisine à des apprentis impatiens de partager vos secrets de familles...</p>
+     </div>
+     <!-----Les cours à la une --------->
+    <h3>Les cours à la une</h3>
+     <div class="row css-cours">
+          <div class="text-cours col-12 col-sm-6 col-lg4">
+              <img src="./pictures/cuisine/1.png" alt="" class="img-thumbnail">
+              <h4>Titre</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum dolor omnis aperiam distinctio, fuga perspiciatis impedit voluptatum quae. Omnis!</p>
+              <a href="" class="btn btn-outline-dark" role="button">organisateur</a>
+          </div>
+          <div class="text-cours col-12 col-sm-6 col-lg4">
+              <img src="./pictures/cuisine/1.png" alt="" class="img-thumbnail">
+              <h4>Titre</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum dolor omnis aperiam distinctio, fuga perspiciatis impedit voluptatum quae. Omnis!</p>
+              <a href="" class="btn btn-outline-dark" role="button">organisateur</a>
+          </div>
+          <div class="text-cours col-12 col-sm-6 col-lg4">
+              <img src="./pictures/cuisine/1.png" alt="" class="img-thumbnail">
+              <h4>Titre</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum dolor omnis aperiam distinctio, fuga perspiciatis impedit voluptatum quae. Omnis!</p>
+              <a href="" class="btn btn-outline-dark" role="button">organisateur</a>
+          </div>   
+     </div>
+     <div class="row"></div> 
+   </section>
+  
+       
+   </main>
+  <footer>
+        <p> Copyright &copy;  Cook and Share </p> 
+        <p> Designed by <a href="#">DIDI LUSA</a></p>
+         <p><a href="">Politique de confidentialité</a></p>
+         <div id="icon">
+            <span class="fab fa-facebook fa-2x"></span> 
+            <span class="fab fa-instagram fa-2x"></span>
+         </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

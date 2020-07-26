@@ -1,0 +1,90 @@
+/*La version mobile first*/
+
+#expe1, .forma{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+
+.logo{
+    
+    width: 50%;
+          
+}
+
+#reception, #formWeb, #formComex,#banlieues{
+    width: 50%;
+}
+
+#art2work , #webDev , #ephec {
+ width: 70%;
+ height: 90%;   
+ 
+}
+
+.name{
+    font-weight:bolder;
+    
+}
+
+h5::before{
+   content: "< ";
+}
+
+h5::after{
+    content: " />" ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*La version tablette */
+
+ @media(min-width: 400px) and (max-width: 800px){
+   #art2work , #webDev , #ephec {
+     width: 50%;
+     height: 70%;   
+    }
+}
+
+
+/*La version desktop*/
+
+@media(min-width: 801px){
+   
+ #parcours{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}  
+    
+    #experiences{
+        width: 100%;
+    } 
+    
+    #formations{
+        width: 100%;
+    }
+    #art2work , #webDev , #ephec {
+     width: 50%;
+     height: 70%;   
+    }
+    /*#expe1, .forma{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+}
+  
+    
+}

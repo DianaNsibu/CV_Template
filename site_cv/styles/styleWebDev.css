@@ -1,0 +1,194 @@
+/*La version mobile*/
+
+/*Les titres*/
+
+.titre4{
+    border-bottom: 1px solid #0f1f38;
+}
+
+h5::before{
+   content: "< ";
+}
+
+h5::after{
+    content: " />" ;
+}
+
+a:hover{
+   border-bottom: 2px solid #0f1f38;
+}
+
+h6{
+  /*border-bottom: 2px solid #0f1f38;*/
+  text-align: center;
+}
+
+/*Images langages*/
+#imgLang{
+    width: 60%;
+    height: 90%;
+}
+
+#imgLangAc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#wdAccueil{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+}
+#wdlang, #wdport{
+        border-bottom: 1px solid #0f1f38;
+        width: 100%;
+        text-align: center;
+    }
+
+/*images portfolio*/
+.imgPort{
+   width: 100%;
+   
+}
+.content {
+    padding: 10px;
+}
+
+
+
+
+
+
+/*La version tablette */
+
+ @media(min-width: 500px) and (max-width: 950px){
+    
+     #wdAccueil{
+       height: 80%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+     }
+      
+    #wdlang, #wdport{
+        border: 1px solid #0f1f38;
+        width: 40%;
+        text-align: center;
+    }
+      
+
+     
+     #imgLang{
+        width: 25%;
+        height:;
+    }
+     
+     
+     #langages{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         justify-content: space-between;        
+    }
+     
+     .langage{
+        width: 45%;
+     }
+     
+     .imgPort{
+         height: 50%;
+     }
+     
+     .rangPortfolio{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-around;
+     }
+     
+     .content{
+         /*border: 1px solid #337bae;*/
+         width: 40%;
+
+    }
+    
+  
+}
+
+
+/*La version desktop*/
+
+@media(min-width: 951px){
+    
+    #acWD{
+      height: inherit;  
+    }  
+    
+     #wdAccueil{
+       height: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+     }
+    
+    #wdlang:hover{
+        background-color: #0f1f38;
+        color: white; 
+    }
+    #wdport:hover{
+      background-color: #0f1f38;
+      color: white;  
+    }
+    
+    #wdlang, #wdport{
+        border: 1px solid #0f1f38;
+        width: 40%;
+        text-align: center;
+    }
+    
+    #imgLang{
+    width: 25%;
+    height: ;
+}
+   
+    #langages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .langage{
+        width: 30%;
+    }
+    
+    h4{
+        font-size: 28px;
+    }
+    
+      .imgPort{
+         width: 90%;
+         height: 50%;
+     }
+    
+     .rangPortfolio{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-around;
+     }
+     
+     .content{
+       border: 1px solid #337bae;
+         width: 30%;
+         height: 45%;
+         
+
+    }  
+    
+    
+   
+}

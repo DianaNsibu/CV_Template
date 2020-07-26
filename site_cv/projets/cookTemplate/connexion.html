@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>connexion</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+       <!------ le logo ------>
+       <img src="./pictures/logo.png" class="mx-auto d-block" alt="">
+       <!-----Barre navigation------>
+       <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="./index.html">Accueil</a></li>
+             <li class="nav-item"><a class="nav-link " href="./about.html">About</a></li>
+             <li class="nav-item"><a class="nav-link " href="./cours.html">Les cours</a></li>
+             <!--<li class="nav-item"><a class="nav-link " href="./organisateurs.html">Les organisateurs</a></li>-->
+             <li class="nav-item"><a class="nav-link " href="./contact.html">Contact</a></li>
+             <li class="nav-item"><a class="nav-link " href="./connexion.html">Connexion</a></li>
+            </ul>
+        </nav>         
+   </header>
+    <main>
+   <section class="container">
+        <h2>Connexion</h2>
+        <form id="Login">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+           
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="forgot">
+            <small id="emailHelp" class="form-text text-muted"><a href="reset.html">Mot de passe oublié?</a></small>
+             
+         </div>
+            <button type="submit" class="btn btn-primary"><a href="./moncompte.html">Submit</a></button>
+            
+        </form>
+        <div class="lien">
+        <p>Pas encore de compte ? <a href="./inscription.html">Inscrivez-vous</a></p> 
+     </div>
+   </section>
+    </main>
+    <br>
+    <footer>
+         @ Cook and Share - Designed by <a href="#">DIDI LUSA</a>
+         <p><a href="">Politique de confidentialité</a></p>
+         <div id="icon">
+            <span class="fab fa-facebook"></span> 
+            <span class="fab fa-instagram"></span>
+         </div>
+    </footer>
+</body>
+</html>

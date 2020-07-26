@@ -1,0 +1,37 @@
+/*La version mobile*/
+
+#IT, #admin , #langues, #hum{
+    text-align: center;
+}
+
+.titre4{
+    border-bottom: 1px solid #0f1f38;
+}
+
+
+/*La version tablette */
+
+ @media(min-width: 450px) and (max-width: 850px){
+   
+    
+  
+}
+
+
+/*La version desktop*/
+
+@media(min-width: 851px){
+   
+    #competences{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+   
+    #IT, #admin , #langues , #hum{
+        width: 25%;
+    }
+    
+}

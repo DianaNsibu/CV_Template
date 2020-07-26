@@ -1,0 +1,123 @@
+html{font-size: 20px;color:#0f1f38; margin: 0; padding 0;font-family: "Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif;}
+/*-----------le main------------*/
+main{
+    background-image: url(./pictures/fondEcrand.png);
+    /*background-size: contain;*/
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+.row{
+    padding: 50px;
+}
+
+/*-------les sections-----------*/
+
+section{background-color: #f7f7f7;}
+
+
+/*-------couleur police---------------*/
+h3{/*border-bottom: 2px solid #ff914d;*/ color:black;/*width: 50%;*/ text-align: center;}
+h4{color:#7ed957; text-align: center;}
+
+/*img {
+  height: auto;
+  max-width: 100%; }*/
+
+
+/*---------La barre de nav---------------*/
+
+ul{ width: 100%;display: flex;flex-direction: row;justify-content: space-between;}
+
+nav{border: 3px solid #7ed957;}
+
+nav ul a {text-decoration: none;color: black;}
+
+nav ul a:hover{opacity: 0.9; text-decoration: underline; color:#ff914d}
+li{list-style-type: none;}
+
+
+/*-----------------Le carousel-----------------*/
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.carousel-caption{
+    opacity: 0.7;
+    background-color: white;
+}
+.carousel-caption p{
+    color: black;
+}
+
+/*a la une*/
+.text-cours a{text-decoration: none;color: black;}
+/*.text-cours a:hover{opacity: 0.9; text-decoration: underline; color:#ff914d}*/
+
+/*------le footer--------*/
+footer{background-color: black; color:white;}
+footer a{text-decoration: none; color:#ff914d;}
+
+
+/*----------le formulaire---------*/
+form{  
+border-radius: 2px;
+margin: 10px auto 30px;
+max-width: 55%;
+padding: 50px 70px 70px 71px;
+}
+
+/*le bouton du formuaire*/
+button a{
+   text-decoration: none;
+   color:white;
+}
+
+button a:hover{
+   text-decoration: none;
+   color:white; 
+}
+
+/*---------------la page mon compte-----------------*/
+/*------les sections--------------*/
+.table{
+        padding: 10px;
+        text-align: justify;
+    } 
+
+.bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.lien{
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;  
+}
+
+.section{
+   
+}
+
+/*----version desktop-------*/
+@media(min-width: 900px){
+ .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}   
+    .image{
+        width: 30%;
+        height: 30%;
+    }
+    #donnees{
+        width: 50%;
+    }
+}
